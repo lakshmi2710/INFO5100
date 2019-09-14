@@ -1,0 +1,109 @@
+Car Rental System:
+
+Customer can:
+
+
+1. Search
+
+2. BookCar
+
+3. CancelCar
+
+4. ReturnCar
+
+5. GiveReview
+
+
+Class: Customer:
+
+    Data: Name, Date, Budget, DrivingLicense, 
+
+    Behaviour:
+
+        SearchCar(SearchPArams)
+        	{
+            	List<car> cars = Services.Search(SearchParams)
+                	//Display car details to Customer
+            }
+    
+        Car BookCar(CarDetail, Budget)
+            { 
+            	if car.CarDetailParam == available:
+            		return car
+            	else:
+            		return "No Car Available
+            		
+            }
+            	
+                
+        void CancelCar(CarDetails)
+        	{
+        		if Car.IsBooked(CarDetails):
+        			Service.cancelCar
+        		else:
+        			return "No cars Booked to cancel
+        	}
+        			
+        void ReturnCar(CarDetails)
+        	{
+        		Service.cancelCar(CarDetails)
+        	}        
+            
+
+Class: CarRentalSystem
+	
+	Data: CarModel, CarPrice
+	
+	Behaviour: 
+	
+		Car GetCarList()
+			// return list of car details
+			
+		Price CarPrice(CarModel)
+			//return price of car 
+			
+			if CarModel == HighEnd:
+				return $$$
+			else if CarModel == LowEnd:
+				return $$
+				
+		 void CheckAvailability(CarDetail):
+		 	//Function to check whether car is available or not
+		 	if car == available:
+		 		return True
+		 	else:
+		 		return False
+
+
+ClasS: Services
+
+		CarList Search(CarDetail):
+			for i ==0; i< numOfCars; i++:
+				if car[i] == CarDetails:
+					println("CarDetails")
+					//list the car
+				else:
+					continue
+					
+		car BookCar(CarDeatils, Budget):
+		
+			if (Car.CheckAvilabil) && Car.Price < Budget:
+				return "car"
+			else:
+				return "No car within budget"
+				
+		void CancelCar(CarDetails):
+			// Function to cancel booked car
+			
+			if Car.carModel == Booked:
+				Car.carModel = Release
+				
+		void returnCAr(CarDetail):
+			//Function to retrun car
+			
+			
+				
+			
+		
+		
+			

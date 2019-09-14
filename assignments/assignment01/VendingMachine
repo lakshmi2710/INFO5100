@@ -1,0 +1,86 @@
+Vending MAchine
+
+Vending Machine should:
+
+1. Accepts Coins
+
+2. Gives item
+
+3. Return Change
+
+
+Class User():
+	Behviour: 
+			Bool RequestService():
+				if User request service:
+					return True
+				else:
+					return False
+		
+			SelectItem(Item)
+				//Function to select items from Vending Machine
+			
+			PutCoin(Denomination)
+				//Function to put coins into vending machine
+				
+			CollectItem():
+				//Function to collect item
+				
+			CollectChange():
+				//Function to collect change dispensed from  vending machine after purchase
+				
+Class Machine():
+	Behviour: 
+		
+			AcceptsInput(Item)
+				//Function to Accept item requested from user
+			
+			getsCoins(Denomination)
+				//Function to get coins from User
+				
+			GiveBackCoin():
+				//Function to return coin if amount is insufficient or not relavant
+				
+			ReturnChange():
+				//Function to return change
+				
+			GiveItem():
+				//Function to give item to user
+				
+
+
+Class VendingMAchineServices:
+	
+	void Requests_item_Service(item,coins):
+		data: ItemList
+	
+		while (User.RequestSErive()):
+			for i in itemList:
+				if itemList[i] == item:
+					select.item()
+					println("%s item select, Amount due %s), %item, % amount)
+					
+	void AcceptsCoints():
+		
+		//Function to accept cooin
+		
+		If Person.PutCoin < itemAmount:
+			Machine.GiveBackCoin
+			Machine.DisplayMessage()
+			
+		else if: Person.PutCoin == itemCoin:
+			Person.CollectItem
+			return
+		
+		else: 
+			Person.CollectItem
+			Person.CollectChange
+				
+				
+					
+			
+		
+		
+		
+		
+		

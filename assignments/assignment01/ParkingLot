@@ -1,0 +1,60 @@
+Parking lot
+
+Car driver Can:
+
+1. Park the car
+
+2. Pay for parking
+
+3. Take out car
+
+
+Class Vehicle:
+	
+	ParkVehicle(VehicleDetails):
+		//Function to park the car in available space
+		
+		if space == Empty:
+			ParkingLot.Park(VehicleType)
+			Driver.Pay(time)
+			
+		else: 
+			ParkingLot.SearchSpace(VehicleType)
+		
+	Pay(time, vehicleType):
+		//Function to pay parking fee according to time parked
+		
+		if vehicleType=="4 wheeler":
+			if time < "30min":
+				Driver.pay(20$)
+			else:
+				Driver.Pay(30$)
+		else vehicleType == "2 wheeler":
+		if time < "30min":
+				Driver.pay(10$)
+			else:
+				Driver.Pay(20$)
+			
+		
+		
+	TakeOutVehicle(VehicleDEtails):
+		//Function to clear parking Space
+		
+		
+Class ParkingLot()
+
+	CheckForSpot(CarDetails):
+		Data: SpotList, AvailabilityFlag, VehicleType
+		
+		for i in range len(SpotList):
+			if (AvailabilyFlag) and Spot[i] has 4 wheeler:
+				return Spot
+				
+	TakeOutCar()
+		// Function to free out space when vehicle is taken out
+		FreeSpot;
+		Set AvailabilityFlag True for Emptied spot
+	
+		
+		
+			

@@ -1,0 +1,69 @@
+Course Registration Platform
+
+Student can:
+
+1. Login
+
+2. search Course
+
+3. Take course
+
+4. drop course
+
+
+Class Student:
+
+Data: Name, CountryOfOrigin, RollNo, 
+
+Behaviour: 
+	CourseList Search_Course(CourseDetails):
+		list = RegistrationPlatform.Search_Service(CourseDetails)
+		return list
+		
+	Course TAkeCourse(CourseDeatils):
+		Course = RegisterPlatform.TakeCourse(CourseDetails)
+		return Course
+		
+	void DropCourse(CourseDetails):
+		RegisterPlatform.DRopCourse(CourseDetails)
+	
+	
+Class RegistrationPlatform:
+		
+Behaviour:
+
+	Search_Service(CourseDetails):
+		List CourseList;
+		
+		for i =0; i< len(CourseList); i++;
+			if CourseDetails[i] in CouirseList:
+				SerchList[] = CourseLists[i];
+			else:
+				continue
+			return SearchList[]
+			
+	 Take_Course(CourseDetails):
+	 	int enrollNo, TotalSeats
+	 	for i =0; i< len(CourseList); i++;
+			if CourseDetails[i] in CouirseList:
+				if enrollNo < TotalSeats:
+					assign seat to student;
+					enrollNo++
+					TotalSeats--
+				else if(waitlistNo < WaitListTotal):
+					Student goest to waitlist
+					waitlistNo++
+					waitlistTotal--
+					
+				else:
+					Println("Sorry!! Enrollment seats and waitlist Both are filled")
+					
+	
+	DropCourse(CourseDetails):
+		//Method to drop course
+		
+	 		
+			
+		
+	
+		

@@ -1,0 +1,90 @@
+Design a Traffic Controller System for a Junction
+
+Walker and Vehicle can:
+
+1. Move
+
+2. Wait
+
+3. Stop
+
+Class: Walker
+
+	Move()
+		if(TCsystem.Green()
+			//CrossRoad
+			timer = 100
+			for i in range(timer)
+				if TCSystem.Green():
+					Walker.Move
+					return
+				else:
+					Walker.wait(10sec)
+					continue
+				
+	Wait()
+		if(TCsystem.Red()
+			//Wait in signal
+			for i in range(timer)
+				if TCSystem.Red():
+					Walker.wait
+					return
+				else:
+					Walker.wait(10sec)
+					continue
+					
+	Stop()
+		if(TCsystem.Yellow()
+			//Stop at signal
+			
+				if TCSystem.Green():
+					Walker.Stop
+					return
+			
+					
+Class: Vehicle
+	Move()
+		if(TCsystem.Green()
+			//CrossRoad
+			timer = 100
+			for i in range(timer)
+				if TCSystem.Green():
+					Vehicle.Move
+					return
+				else:
+					Vehicle.wait(10sec)
+					continue
+				
+	Wait()
+		if(TCsystem.Red()
+			//Wait in signal
+			for i in range(timer)
+				if TCSystem.Red():
+					Vehicle.wait
+					return
+				else:
+					Vehicle.wait(10sec)
+					continue
+					
+	Stop()
+		if(TCsystem.Yellow()
+			//Stop at signal
+			
+				if TCSystem.Green():
+					Vehicle.Stop
+					return
+			
+Class: TCsystem
+	Data: Timer
+	
+	Lights = ['Green','Red', 'Yellow']
+	
+	for light in Lights:
+		if light == 'Green':
+			wait(20)
+		if light == 'Red':
+			wait(20)
+		if light == ' Yellow'
+			wait(5)
+	
+	
