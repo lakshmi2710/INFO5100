@@ -1,0 +1,13 @@
+Q10. What is the difference between Encapsulation and Abstraction
+
+
+Encapsulated class, instance can be created                        
+Encapsulation hides the data 		         	
+Encapsulation is implemented by private access modifier                
+Encapsulation puts together data and methods into single entity 
+
+
+Abstract class, instance cannot be created
+Abstraction hides the implementation
+Abstraction is implemented using interface and abstract classes
+Abstraction conveys what object does rather than how it is implemented 

@@ -1,0 +1,56 @@
+Q9. Explain Encapsulation with an example. (Write at least 30-40 words).
+
+		Encapsulation is protecting the members of the class.
+		So that outside class, should not be able to alter the data members value.
+		
+		Class members can be made read only or write only using getter, setter methods inside class.
+		
+		Also using setter method, we can validate the value to be set to the data member.
+		
+		
+		For example:
+		
+		class Employee(){
+		
+			private int empId;
+			private double salary;
+			private String Name;
+			private int YearOfExperience;
+			private String ReportingTo;
+			
+			public void setSalary(double salary){
+				if(salary > 100000 && salary < 10000000000)
+					this.salary = salary;
+				else
+					System.out.println("Salary is invalid");
+			}
+			
+			public double getSalary(){
+				return salary;
+			}
+			
+			public void setYearOfExperience(int num){
+				if( num > 0 && salary < 80)
+					this.YearOfExperience = num;
+				else
+					System.out.println("Year of experience is invalid is invalid");
+			}
+			
+			public double getYearOfExperience(){
+				return this.YearOfExperience;
+			}
+			
+			
+			In the above example, we can see if empId, salary or any other members were not encapsulated or made private.
+			Anyone could have altered it with some invalid value.
+			
+			By making it private, it can be accessible only by getter setter method. 
+			
+			In Setter method we can see there is validation steps to validate the value and then to set it to variable.
+			
+			By Using encapsulation, we can hide the implementation detail from outsider and no one can alter the private data member.
+			
+					
+			
+			
+		
