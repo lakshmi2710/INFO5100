@@ -1,0 +1,15 @@
+Explain the difference between final and finally in Java 8.
+
+
+Final
+final keyword is used when value needs to be fixed through out the project.
+final keyword can be assigned to variable, method or class.
+if variable is final variable, it can not be changed.
+if method is final method, it can not be overriden.
+if class is final class, it can not be extended.
+
+
+Finally
+Whereas finally keyword is used in exception handling for a block of code.
+finally block will be used after try catch block.
+and it gets executed irrespective of exception handling.

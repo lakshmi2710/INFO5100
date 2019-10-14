@@ -1,0 +1,17 @@
+ When b.addAll(list) function called, it goes to public boolean addAll(Collection<Object> c) function in class b 
+ 
+ in addAll function addCount variable gets value of c.size() i.e 3. Inside same function it goes to super.addAll(c)
+ 
+ which is defined in class A and extended from class B. In addAll function in class A, it iterates over the items 
+ 
+ in list and in every iteration it calls this.add function. Since its working on class b instance, 
+ 
+ it call add function which in defined in class b.  In add function, in every iteration addCount value gets 
+ 
+ incremented by 1. So initially value will be 3, and in 3 iteration final value of addCount value become 6.
+ 
+ When b.getAddCount() called, final value of addCount return 6.
+ 
+ b.getI() returns 0. since i value is 0 in class A. and scope of i in class A does not affected by i's value in class B.
+ 
+ System.out.print prints 6 at the end of execution.
