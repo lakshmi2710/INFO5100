@@ -1,0 +1,5 @@
+Searching is easy in array since its index based.
+ArrayList takes less memory since it has to save.
+
+Insertion and deletion easy in LinkedList, since it operates using links. But search is difficult.
+LinkedList takes more memory since it has to store value and link to neighbour nodes in memory.
